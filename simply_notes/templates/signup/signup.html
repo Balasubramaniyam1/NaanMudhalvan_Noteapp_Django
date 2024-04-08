@@ -33,13 +33,13 @@ Signup | SimplyNote
 <nav class="bg-gray-200 shadow shadow-gray-300 w-100 px-8 md:px-auto">
     <div class="md:h-16 h-28 mx-auto md:px-4 container flex items-center justify-between flex-wrap md:flex-nowrap">
         <!-- Logo -->
-        <a href="/" class="text-green-500  ml-[5%] text-[20px] font-bold md:order-1">
+        <a href="/" class="text-red-500  ml-[5%] text-[20px] font-bold md:order-1">
             <!-- Heroicon - Chip Outline -->
             <p>Noter</p>
         </a>
 
         <div class="order-2 flex gap-3 md:order-3">
-            <a href="/login/" class="px-4 py-2 bg-green-500 hover:bg-green-600 text-gray-50 rounded-xl flex items-center gap-2">
+            <a href="/login/" class="px-4 py-2 bg-red-500 hover:bg-red-600 text-gray-50 rounded-xl flex items-center gap-2">
                 <!-- Heroicons - Login Solid -->
                 
                 <span>Login</span>
@@ -49,7 +49,7 @@ Signup | SimplyNote
 </nav>
 
 <div class=" flex items-center justify-center my-6">
-    <div class="bg-white p-10 rounded shadow-md w-[30%] border-green-500 border">
+    <div class="bg-white p-10 rounded shadow-md w-[30%] border-red-500 border">
         <!-- <img src='/notes/join.gif' alt="Welcome" width="400px" class="mb-4"> -->
         <h2 class="text-2xl font-semibold mb-6 text-center">Sign Up</h2>
         <form method="post">
@@ -61,7 +61,7 @@ Signup | SimplyNote
                 </div>
             {% endfor %}
             <div id="passwordRequirements" class="mb-3 mt-2 text-sm text-gray-700"></div>
-            <button type="submit" class="bg-green-500 text-white px-4 py-2 rounded w-full">Sign Up</button>
+            <button type="submit" class="bg-red-500 text-white px-4 py-2 rounded w-full">Sign Up</button>
         </form>
     </div>
 </div>
@@ -82,7 +82,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
         requirements.forEach(function(requirement) {
             const isSatisfied = checkRequirement(password, requirement);
-            const color = isSatisfied ? 'green' : 'red';
+            const color = isSatisfied ? 'red' : 'red';
             html += `<div style="color: ${color};">${requirement}</div>`;
         });
 

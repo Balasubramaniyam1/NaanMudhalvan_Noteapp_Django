@@ -30,17 +30,17 @@ Dashboard | SimplyNote
 <nav class="bg-gray-200 shadow shadow-gray-300">
     <div class="container mx-auto px-8 md:px-4 py-4 flex items-center justify-between">
         <!-- Logo -->
-        <a href="/" class="text-green-500  ml-[5%] font-bold text-[20px]">
-            <p>Noter</p>
+        <a href="/" class="text-red-500  ml-[5%] font-bold text-[20px]">
+            <p>Elite</p>
         </a>
 
         <div class="flex gap-3 w-[35%]">
             <a href="" class="px-4 py-2 flex flex-row gap-2 ">
-                <div class=" rounded-[50%] bg-green-500 w-[25px] h-[25px] flex justify-center items-center text-black text-[15px] decoration-none">
+                <div class=" rounded-[50%] bg-red-500 w-[25px] h-[25px] flex justify-center items-center text-black text-[15px] decoration-none">
                     {{ user.username|first|upper }}
                 </div>
                 {{ user.username }}</a>
-            <a href="/logout/" class="px-4 py-1  bg-green-500 hover:bg-green-600 text-gray-50 rounded-[5px] font-semibold flex items-center gap-2">
+            <a href="/logout/" class="px-4 py-1  bg-red-500 hover:bg-red-600 text-gray-50 rounded-[5px] font-semibold flex items-center gap-2">
                 
                 <span>Logout</span>
             </a>
@@ -95,7 +95,7 @@ Dashboard | SimplyNote
                         <label for="file" class="block text-gray-700 text-sm font-bold mb-2">Upload File:</label>
                         <input type="file" id="file" name="file" accept=".pdf,.doc,.docx" class="appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline">
                     </div>
-                    <button type="submit" class="bg-green-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline">Upload</button>
+                    <button type="submit" class="bg-red-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline">Upload</button>
                 </form>
             </div>
         {% else %}
@@ -109,7 +109,7 @@ Dashboard | SimplyNote
                         <h4 class="text-[18px] font-semibold mb-2">{{ note.title }}</h4>
                         <p class="text-[14px] text-gray-600 my-4">{{ note.description }}</p>
 
-                        <div class="absolute text-[14px] bg-green-500 rounded-[5px] text-white bottom-[10%] right-[10%] py-[2%] px-[5%] hover:shadow-md">
+                        <div class="absolute text-[14px] bg-red-500 rounded-[5px] text-white bottom-[10%] right-[10%] py-[2%] px-[5%] hover:shadow-md">
                             <a href="{{ note.file.url }}" class="text-white " download="">Download</a>
                         </div>
 
