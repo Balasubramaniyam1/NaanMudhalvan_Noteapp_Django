@@ -4,7 +4,11 @@ from .forms import SignupForm, LoginForm, NoteUploadForm
 from .models import UserType, Note
 from django.core.exceptions import ObjectDoesNotExist
 
+
+
+
 def home(request):
+    
     return render(request, 'home/home.html')
 
 def user_signup(request):
@@ -57,5 +61,3 @@ def dashboard(request):
 def user_logout(request):
     logout(request)
     return redirect('login')
-
-
